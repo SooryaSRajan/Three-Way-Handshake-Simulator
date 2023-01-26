@@ -24,11 +24,6 @@
 
 export default {
   name: "NetworkInteractionComponent",
-  data() {
-    return {
-      elementMap: {}
-    }
-  },
   mounted() {
     let marginContainer = document.getElementById("margin-container").getBoundingClientRect();
 
@@ -63,8 +58,6 @@ export default {
       let packageWidth = 40
       let packageHeight = packageDOM.offsetHeight / 2
 
-      console.log(packageWidth, packageHeight)
-
       //detaching from current element and moving to overlay
       let xT = currentElement.offsetLeft + (currentElement.offsetWidth);
       let yT = currentElement.offsetTop + (currentElement.offsetHeight);
@@ -75,8 +68,6 @@ export default {
 
       packageDOM.style.left = xT + 'px';
       packageDOM.style.top = yT + 'px';
-
-      console.log(packageDOM.style.width, packageDOM.style.height)
 
       //setting element to center of current element
       let x1T = currentElement.offsetLeft + (currentElement.offsetWidth / 2) - packageWidth
@@ -149,9 +140,5 @@ export default {
 
 #overlay {
   position: relative;
-}
-
-div {
-  transition: ease-in-out 1s;
 }
 </style>

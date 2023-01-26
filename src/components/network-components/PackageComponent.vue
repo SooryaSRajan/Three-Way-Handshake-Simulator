@@ -55,8 +55,6 @@ export default {
   background-color: black;
   margin: 2px 0;
 }
-div{
-  transition: ease-in-out 1s;
-}
+
 
 </style>
