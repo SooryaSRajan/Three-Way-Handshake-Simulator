@@ -289,4 +289,30 @@ p {
   font-weight: 600;
 }
 
+/*media screen*/
+@media screen and (max-width: 950px) {
+  .flex-box {
+    flex-direction: column;
+    height: 200vh;
+  }
+
+  .rem-space {
+    flex-direction: column;
+  }
+
+  .row-1 {
+    align-items: center;
+    padding: 10px;
+  }
+
+  .row-2 {
+    padding: 10px;
+  }
+
+  .side-space:nth-child(1) {
+    display: none;
+  }
+
+}
+
 </style>
